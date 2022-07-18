@@ -2,9 +2,21 @@
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  position:fixed;
+  width:100%;
+  box-sizing: border-box;
+  top:0px;
+  z-index: 2;
 }
 .status-bar__column {
+  /* position:fixed; */
   width: 33%;
+}
+.status-bar__column:first-child {
+  left:10px;
+}
+.status-bar__column:last-child {
+  right: 5px;
 }
 .status-bar__column:first-child span {
   margin-right: 5px;
